@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(rgb(197, 197, 197), rgb(163, 189, 223));
+}
+
+/*grids*/
+
+#grid-wrapper {
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 2fr 1fr;
+    gap: 10px;
+grid-template-areas:
+"header header header header"
+"main main main main"
+"main2 main2 main2 main2"
+"main3 main3 main3 main3"
+"main4 main4 main4 main4"
+"main5 main5 main5 main5"
+"footer footer footer footer"
+}
+
+#grid-wrapper section {
+    border: 1px solid black;
+}
+
+/*HEADER*/
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/img/fondo2.jpg);
+}
+
+.header nav a{
+    text-decoration:none;
+    color:inherit;
+    font: size 2rem;
+    
+}
+
+.header nav li {
+    display:inline-block;
+    width:130px;
+    height:25px;
+    padding:5px 10px;
+    background-color: rgb(202, 223, 230);
+    border:1px solid #000;
+    border-radius: 5%;
+    text-align:center;
+    color:rgb(3, 1, 105);
+    position:relative;
+    top: 5px;
+    left: -40px;
+}
+
+.header nav li:hover {
+    background-color:rgb(44, 178, 190);
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;
+} 
+
+.header nav li>ul {
+    display:none;
+}
+
+.header nav li:hover>ul {
+    display:inline-block;
+    position: absolute;
+    top: 25px;
+    right: -80px;
+}
+
+.logo {
+    filter: grayscale(50%);
+}
+
+.logo:hover {
+    filter: none;
+}
+
+/*MAIN*/
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__tituloIndex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-style: italic;
+}
+
+.main__subtituloIndex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main__tituloServicio {
+    display: flex;
+    font-style: italic;
+}
+
+.main__subtitulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*MAIN 2*/
+
+.main2 {
+    grid-area: main2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main2__tituloIndex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main2__subtituloIndex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main2__titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main2__subtitulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+/*MAIN 3*/
+
+.main3 {
+    grid-area: main3;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main3__tituloIndex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main3__subtituloIndex {
+    display: flex;
+    width: 100%;
+}
+
+.main3__tituloContacto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.main3__subtituloContacto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main3__tituloServicio {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.main3__subtituloServicio {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main3__tituloSoporte {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.main3__subtituloSoporte {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.main3__tituloLaptop {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.main3__tituloSmart {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 120PX;
+}
+
+.main3__ficha {
+    display: flex;
+}
+
+.main3__titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.main3__subtitulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.main3__vrLite {
+    display: flex;
+    align-items: center;
+
+}
+
+.main3__vrPlus {
+    display: flex;
+    align-items: center;
+}
+
+.main3__tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.main3__tituloTablet7 {
+    display: flex;
+    width: 25%;
+    
+}
+
+.main3__tituloTablet8 {
+    display: flex;
+    width: 25%;
+    margin-left: 140px;
+
+}
+
+.main3__tituloTablet10 {
+    display: flex;
+    width: 25%;
+    margin-left: 140px;
+}
+
+.main3__tituloPc {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+/*MAIN 4*/
+
+.main4 {
+    grid-area: main4;
+    display: flex;
+}
+
+.main4__tituloIndex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main4__tituloLaptop {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.main4__tituloLaptop a {
+    display: flex;
+    width: 100%;
+}
+
+.main4__tituloLaptop:hover {
+    transform: scale(1.1);
+}
+
+.main4__vrLite {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main4__vrPlus {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main4__tituloTablet {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.main4__tituloTablet7 {
+    display: flex;
+    width: 25%; 
+    margin-left: 80px;
+}
+
+.main4__tituloTablet8 {
+    display: flex;
+    width: 25%;
+    margin-left: 180px;
+}
+
+.main4__tituloTablet10 {
+    display: flex;
+    width: 25%;
+    margin-left: 190px;
+}
+
+.main4__tituloSmart {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 80px;
+}
+
+.main4__tituloPc {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 250px;
+}
+
+.main4__hero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main4__hero2 {
+    display: flex;
+}
+
+.main4__hero3 {
+    display: flex;
+}
+
+.main4__hero4 {
+    display: flex;
+}
+
+/*MAIN 5*/
+
+.main5 {
+    grid-area: main5;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main5__tituloIndex a {
+    display: flex;
+    justify-content: center;
+}
+
+.main5__tituloIndex a:hover {
+    transform: scale(1.2);
+}
+
+.main5__subtituloIndex a {
+    display: flex;
+    justify-content: center;
+}
+
+.main5__subtituloIndex a:hover {
+    transform: scale(1.2);
+}
+
+.main5__subIndex a {
+    display: flex;
+    justify-content: center;
+}
+
+.main5__subIndex a:hover {
+    transform: scale(1.2);
+}
+
+.main5__tituloLaptop {
+    display: flex;
+    text-align: center;
+    
+}
+
+.main5__tituloSmart {
+    display: flex;
+    font-size: 1rem;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.main5__tituloPc {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 250px;
+}
+
+.main5__kit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main5__trabajo {
+    display: flex;
+    width: 100%;
+}
+
+.main4__form {
+    display: flex;
+    height: 50%;
+}
+
+/*FOOTER*/
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-image: url(/img/fondo2.jpg);
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(119, 148, 212);
+}
+
+.footer__title {
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+.footer__links {
+    width: 40%;
+    display: flex;
+}
+.footer__links a {
+    margin-right: 15px;
+}
+
+/*class*/
+
+
+.titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: coral;
+    margin-top: 100px;
+}
+
+.titulo2 {
+    display: flex;
+    height: 100%;
+    margin-left: -230px;
+
+}
+
+.titulo3 {
+    display: flex;
+    margin-left: 610px;
+}
+
+.subtitulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.laptop {
+    display: flex;
+    justify-content: center;
+}
+
+.laptop2 {
+    display: flex;
+    width: 50%;
+    margin-left: 190px;
+
+}
+
+.parrafo {
+    display: flex;
+    text-align: justify;
+    width: 40%;
+    margin-top: -60px;
+}
+
+.pc1 {
+    display: flex;
+    width: 100%;
+    margin-left: -100px;
+}
+
+.pc2 {
+    display: flex;
+    width: 100%;
+}
